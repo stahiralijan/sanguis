@@ -15,7 +15,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Project Sanguis'),
+
+    'version' => '0.1.0',
 
     /*
     |--------------------------------------------------------------------------
