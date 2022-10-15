@@ -1,8 +1,16 @@
 {
-    "name": "laravel/laravel",
+    "name": "stahiralijan/sanguis",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Syed Tahir Ali Jan",
+            "homepage": "https://tahirjan.com",
+            "email": "stahiralijan@gmail.com"
+        }
+    ],
+    "description": "This is an open-source project for Blood donation and sourcing for Blood-banks.",
+    "keywords": ["sanguis", "blood bank"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
