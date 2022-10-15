@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('user_profiles', function (Blueprint $table) {
             $table->bigInteger('user_id');
             $table->string('first_name',15);
-            $table->string('last_name',15);
-            $table->string('phone',15);
+            $table->string('last_name', 15);
+            $table->string('phone', 25);
             $table->boolean('gender');
             $table->date('birthdate');
             // other details such as diseases etc will be added later

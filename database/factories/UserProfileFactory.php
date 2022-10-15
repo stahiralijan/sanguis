@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,12 +15,16 @@ class UserProfileFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition()
+    public function definition ()
     {
         return [
-            //
+            'user_id'    => User::factory()->donor(),
+            'first_name' => fake()->firstName(),
+            'last_name'  => fake()->lastName(),
+            'phone'      => fake()->phoneNumber(),
+            'gender'     => fake()->boolean(),
+            'birthdate'  => fake()->date(max: now()->addYears(-18)),
         ];
     }
-
 
 }
