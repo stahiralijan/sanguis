@@ -1,18 +1,13 @@
-<template>
-    <Layout>
-      <Head title="Home" />
-      <h1>Home</h1>
-        <Nav />
-    </Layout>
-  </template>
+<script setup>
+import {Head} from "@inertiajs/inertia-vue3";
+import {defineComponent} from "vue";
 
-<script>
-import { Head } from "@inertiajs/inertia-vue3"
-import Nav from "../Shared/Nav"
-
-export default {
-    components: {
-        Head, Nav
-    }
-}
+defineComponent({
+    Head
+})
 </script>
+
+<template>
+    <Head title="Home"/>
+    <h1>Home</h1>
+</template>
