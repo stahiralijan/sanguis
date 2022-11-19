@@ -1,6 +1,6 @@
 import {mergeProps, unref, withCtx, createVNode, useSSRContext} from "vue";
 import {ssrRenderAttrs, ssrRenderComponent, ssrRenderSlot} from "vue/server-renderer";
-import {A as ApplicationLogo} from "./ApplicationLogo.d9b05fbe.mjs";
+import {A as ApplicationLogo} from "./ApplicationLogo.dfdeb5b4.mjs";
 import {Link} from "@inertiajs/inertia-vue3";
 
 const _sfc_main$1 = {

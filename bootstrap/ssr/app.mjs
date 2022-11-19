@@ -1,6 +1,5 @@
-var _a;
 import {createApp, h as h$1} from "vue";
-import {createInertiaApp} from "@inertiajs/inertia-vue3";
+import {createInertiaApp, Link, Head} from "@inertiajs/inertia-vue3";
 import {InertiaProgress} from "@inertiajs/progress";
 
 async function resolvePageComponent(path, pages) {
@@ -17,11 +16,9 @@ function t(t4, r2) {
         e2.enumerable = e2.enumerable || false, e2.configurable = true, "value" in e2 && (e2.writable = true), Object.defineProperty(t4, e2.key, e2);
     }
 }
-
 function r(r2, n2, e2) {
     return n2 && t(r2.prototype, n2), e2 && t(r2, e2), Object.defineProperty(r2, "prototype", {writable: false}), r2;
 }
-
 function n() {
     return n = Object.assign ? Object.assign.bind() : function (t4) {
         for (var r2 = 1; r2 < arguments.length; r2++) {
@@ -32,19 +29,16 @@ function n() {
         return t4;
     }, n.apply(this, arguments);
 }
-
 function e(t4) {
     return e = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t5) {
         return t5.__proto__ || Object.getPrototypeOf(t5);
     }, e(t4);
 }
-
 function o(t4, r2) {
     return o = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t5, r3) {
         return t5.__proto__ = r3, t5;
     }, o(t4, r2);
 }
-
 function i() {
     if ("undefined" == typeof Reflect || !Reflect.construct)
         return false;
@@ -59,7 +53,6 @@ function i() {
         return false;
     }
 }
-
 function u(t4, r2, n2) {
     return u = i() ? Reflect.construct.bind() : function (t5, r3, n3) {
         var e2 = [null];
@@ -68,7 +61,6 @@ function u(t4, r2, n2) {
         return n3 && o(i2, n3.prototype), i2;
     }, u.apply(null, arguments);
 }
-
 function f(t4) {
     var r2 = "function" == typeof Map ? /* @__PURE__ */ new Map() : void 0;
     return f = function (t5) {
@@ -586,24 +578,25 @@ var a = String.prototype.replace, c = /%20/g, l = {
         t4.mixin({methods: {route: n2}}), parseInt(t4.version) > 2 && t4.provide("route", n2);
     }
 };
-const appName = ((_a = window.document.getElementsByTagName("title")[0]) == null ? void 0 : _a.innerText) || "Laravel";
+const app = "";
+const appName = "Sanguis";
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, /* @__PURE__ */ Object.assign({
-        "./Pages/Auth/ConfirmPassword.vue": () => import("./assets/ConfirmPassword.1e82754b.mjs"),
-        "./Pages/Auth/ForgotPassword.vue": () => import("./assets/ForgotPassword.407c86b5.mjs"),
-        "./Pages/Auth/Login.vue": () => import("./assets/Login.a26e16d8.mjs"),
-        "./Pages/Auth/Register.vue": () => import("./assets/Register.b7bfea53.mjs"),
-        "./Pages/Auth/ResetPassword.vue": () => import("./assets/ResetPassword.6f4ea33b.mjs"),
-        "./Pages/Auth/VerifyEmail.vue": () => import("./assets/VerifyEmail.32d2a155.mjs"),
-        "./Pages/Dashboard.vue": () => import("./assets/Dashboard.70de1433.mjs"),
+        "./Pages/Auth/ConfirmPassword.vue": () => import("./assets/ConfirmPassword.0176a5e6.mjs"),
+        "./Pages/Auth/ForgotPassword.vue": () => import("./assets/ForgotPassword.c21e1f4f.mjs"),
+        "./Pages/Auth/Login.vue": () => import("./assets/Login.baee368e.mjs"),
+        "./Pages/Auth/Register.vue": () => import("./assets/Register.76be660e.mjs"),
+        "./Pages/Auth/ResetPassword.vue": () => import("./assets/ResetPassword.896c397a.mjs"),
+        "./Pages/Auth/VerifyEmail.vue": () => import("./assets/VerifyEmail.ee7219dd.mjs"),
+        "./Pages/Dashboard.vue": () => import("./assets/Dashboard.3def5d82.mjs"),
         "./Pages/Home.vue": () => import("./assets/Home.a7104057.mjs"),
         "./Pages/Settings.vue": () => import("./assets/Settings.b2661683.mjs"),
         "./Pages/Users.vue": () => import("./assets/Users.5ce0b645.mjs"),
-        "./Pages/Welcome.vue": () => import("./assets/Welcome.e5478be5.mjs")
+        "./Pages/Welcome.vue": () => import("./assets/Welcome.1a406c81.mjs")
     })),
-    setup({el, app, props, plugin}) {
-        return createApp({render: () => h$1(app, props)}).use(plugin).use(I, Ziggy).mount(el);
+    setup({el, app: app2, props, plugin}) {
+        return createApp({render: () => h$1(app2, props)}).use(plugin).use(I, Ziggy).use("Link", Link).use("Head", Head).mount(el);
     }
 });
 InertiaProgress.init({color: "#d50000", showSpinner: true});

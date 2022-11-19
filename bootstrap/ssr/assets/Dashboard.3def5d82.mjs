@@ -22,7 +22,7 @@ import {
     ssrRenderComponent,
     ssrInterpolate
 } from "vue/server-renderer";
-import {A as ApplicationLogo} from "./ApplicationLogo.d9b05fbe.mjs";
+import {A as ApplicationLogo} from "./ApplicationLogo.dfdeb5b4.mjs";
 import {Link, Head} from "@inertiajs/inertia-vue3";
 import "./_plugin-vue_export-helper.43be4956.mjs";
 
@@ -184,7 +184,7 @@ const _sfc_main$1 = {
         return (_ctx, _push, _parent, _attrs) => {
             _push(`<div${ssrRenderAttrs(_attrs)}><div class="min-h-screen bg-gray-100"><nav class="bg-white border-b border-gray-100"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between h-16"><div class="flex"><div class="shrink-0 flex items-center">`);
             _push(ssrRenderComponent(unref(Link), {
-                href: _ctx.route("dashboard")
+                href: _ctx.route("home")
             }, {
                 default: withCtx((_, _push2, _parent2, _scopeId) => {
                     if (_push2) {
@@ -199,8 +199,8 @@ const _sfc_main$1 = {
             }, _parent));
             _push(`</div><div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">`);
             _push(ssrRenderComponent(_sfc_main$3, {
-                href: _ctx.route("dashboard"),
-                active: _ctx.route().current("dashboard")
+                href: _ctx.route("home"),
+                active: _ctx.route().current("home")
             }, {
                 default: withCtx((_, _push2, _parent2, _scopeId) => {
                     if (_push2) {
@@ -292,8 +292,8 @@ const _sfc_main$1 = {
                 "hidden": !showingNavigationDropdown.value
             }, "sm:hidden"])}"><div class="pt-2 pb-3 space-y-1">`);
             _push(ssrRenderComponent(_sfc_main$2, {
-                href: _ctx.route("dashboard"),
-                active: _ctx.route().current("dashboard")
+                href: _ctx.route("home"),
+                active: _ctx.route().current("home")
             }, {
                 default: withCtx((_, _push2, _parent2, _scopeId) => {
                     if (_push2) {

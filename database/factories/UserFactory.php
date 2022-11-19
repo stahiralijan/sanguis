@@ -64,7 +64,8 @@ class UserFactory extends Factory
         return $this->state(function (array $attributes)
         {
             return [
-                'role' => USER_ROLES::ADMIN->value,
+                'email' => 'admin@sanguis.com',
+                'role'  => USER_ROLES::ADMIN->value,
             ];
         });
     }
